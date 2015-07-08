@@ -99,7 +99,8 @@ function makeGraphs(error, projectsJson, statesJson) {
 		})
 		.projection(d3.geo.albersUsa()
     				.scale(600)
-    				.translate([340, 150]))
+    				.translate([340, 150])
+    				.center([100, 0]))
 		.title(function (p) {
 			return "State: " + p["key"]
 					+ "\n"
